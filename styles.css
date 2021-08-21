@@ -1,0 +1,61 @@
+.btn {
+	color: #fff !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #ed3330;
+	padding: 20px;
+	border-radius: 5px;
+	display: inline-block;
+	border: none;
+	transition: all 0.4s ease 0s;
+}
+.btn:hover {
+    color: rgb(13, 192, 236) !important;
+	background: #404040;
+    font-weight: 600 !important;
+	letter-spacing: 1px;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
+}
+input{
+    width:10%;
+    border:2px solid #aaa;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+  }
+  
+input:focus{
+    border-color:dodgerBlue;
+    box-shadow:0 0 8px 0 dodgerBlue;
+  }
+
+.text {
+	border: none;
+	background: #404040;
+	color: #ffffff !important;
+	font-weight: 700;
+	padding: 20px;
+	border-radius: 6px;
+	display: inline-block;
+	transition: all 0.3s ease 0s;
+}
+
+.text:hover {
+	color: #404040 !important;
+	font-weight: 900 !important;
+	background: none;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.3s ease 0s;
+}
+h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 40px;
+	margin-bottom: 10px;
+}
