@@ -93,3 +93,20 @@ h1 {
 	font-family: sans-serif;
 	font-size: 20px;
 }
+.a {
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 18px;
+	width: 40%;
+	border: none;
+	font-weight: 700;
+	padding: 20px;
+	border-radius: 6px;
+	display: inline-block;
+	color: #404040 !important;
+	font-weight: 900 !important;
+	background: none;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.3s ease 0s;
+}
