@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <script>
+            
+            function splitFromTextArea() {
+            var x = document.getElementById("myta").value; // id should match
+            var array = x.split("\n");
+            // lines are in the array
+            for(i=1;i<=array.length;i++){
+                document.getElementById("pp").innerHTML += "<p class='text'>" + i.toString() + ". " + array[i-1] + "</p>&nbsp&nbsp"
+                if(i%2==0){
+                    document.getElementById("pp").innerHTML += "<br>"
+                }
+            }
+            }
+        </script>
+        <style>
+            .btn {
+        font-family: sans-serif;
+        font-size: 18px;
+        width: 40%;
+        border: none;
+        background: #e70c0c;
+        color: #fff !important;
+        font-weight: 700;
+        padding: 20px;
+        border-radius: 6px;
+        display: inline-block;
+        transition: all 0.3s ease 0s;
+    }
+
+    .btn:hover {
+        color: #404040 !important;
+        font-weight: 900 !important;
+        background: #fff;
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        transition: all 0.3s ease 0s;
+    }
+                .text {
+        font-family: sans-serif;
+        font-size: 18px;
+        width: 40%;
+        border: none;
+        background: #404040;
+        color: #ffffff !important;
+        font-weight: 700;
+        padding: 20px;
+        border-radius: 6px;
+        display: inline-block;
+        transition: all 0.3s ease 0s;
+    }
+
+    .text:hover {
+        color: #404040 !important;
+        font-weight: 900 !important;
+        background: #1ef3fa;
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        transition: all 0.3s ease 0s;
+    }
+    .container {
+        width:95%;
+        color: #404040 !important;
+        font-weight: 900 !important;
+        background: none;
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        transition: all 0.3s ease 0s;
+    }
+    .input{
+        font-size: 20px;
+    font-family: serif;
+    width:60%;
+    height:40%;
+    border:2px solid #aaa;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+  }
+  
+    .input:hover{
+        border-color:#ed3330;
+        box-shadow:0 0 8px 0 #ed3330;
+    }
+
+    .input:focus{
+        border-color:dodgerBlue;
+        box-shadow:0 0 8px 0 dodgerBlue;
+    }
+        </style>
+    </head>
+    <body>
+        <center>
+            <br><br>
+        <textarea class="input" placeholder="Write The Names Here ... ... ... " id="myta"></textarea>
+        <br><br>
+        <button class="btn" onclick="splitFromTextArea()">Click Me</button>
+        <br><br><br>
+        <div id="pp" class="container"><br></div>
+        </center>
+    </body>
+</html>
